@@ -1,7 +1,7 @@
 import Node from "./shape/Node";
 import Rectangle from "./shape/Rectangle";
 
-export default class canvasV {
+class canvasV {
     constructor(config) {
         if (config.ele === undefined) {
             throw new Error("Not found container of canvas element");
@@ -28,3 +28,4 @@ export default class canvasV {
     }
 
 }
+window.canvasV = canvasV
